@@ -2,14 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/css/style.css">
   <title>landing page</title>
 </head>
 <body>
-  
+  <header>
+    <nav class="flex jsSb alC">
+      <a href="/"><img src="images/logo.svg" alt="logo"></a>
+      <a href="#" class="burger desktopHide">
+      <span></span><span></span><span></span>
+    </a>
+    <ul class="navBar ">
+      <li href="#">Home</li>
+      <li href="#">About</li>
+      <li href="#">Contacts</li>
+      <li href="#">Blog</li>
+      <li href="#">Careers</li>
+    </ul>
+    <button type="button" class="mobileHide">Request Invite</button>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="img"></div>
+    <div class="text">
+      <h1>Next generation digital banking!!!!</h1>
+      <p>
+        Take your financial life online. Your Easybank account will be a
+        one-stop-shop for spending, saving, budgeting, investing, and much
+        more.
+      </p>
+      <button type="button">Request Invite</button>
+    </div>
+  </section>
+  <div class="headerOverlay"></div>
 <script src="app/js/app.js"></script>
 </body>
 </html>
