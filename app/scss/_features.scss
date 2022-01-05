@@ -1,6 +1,11 @@
 .features{
-    padding: 10% 0;
+    text-align: center;
+    @include breakPoinUp(medium){text-align: left;}
+    padding: 5rem 0;
+    background: $LightGrayishBlue;
     .text{
+        margin-bottom: 3.75rem;
+        @include breakPoinUp(large){width: 60%;}
         h2{
             font-size: 1.875rem;
             font-weight: 300;
@@ -10,7 +15,7 @@
         }
     }
     .grid{
-        @include breakPoinUp(large){
+        @include breakPoinUp(medium){
             display: flex;
             flex-wrap: wrap;
         }
@@ -23,13 +28,17 @@
             }
             padding: 0.9375rem;
             .icon{
-
-            } 
-            .title{
-    
+                margin-bottom: 1.875rem;
+                @include breakPoinUp(large){
+                    margin-bottom: 2.75rem;
+                }
             }
-            .desctription{
-    
+            .title{
+                margin-bottom: 1.875rem;
+                font-size: 24px;
+                font-weight: 300;
+                color: $DarkBlue;
+                @include breakPoinUp(large){font-size: 1.5rem;}
             }
         }
     }
